@@ -1,43 +1,47 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-// Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
-// 4 -> 24 
-// 5 -> 120
-Console.WriteLine("введите число");
-int A = Convert.ToInt32(Console.ReadLine());
-int i = A;
-for (A = факт A);{//ПРАВИЛЬНЕЕ для
-    }
-Console.WriteLine($"произвед");
-
-int sum = 1;
-if (A<1)
+﻿// hw 4 Задача 27: Напишите программу, которая принимает на вход число и 
+// выдаёт сумму цифр в числе. 452 -> 11 . 82 -> 10. 9012 -> 12
+Console.Write("Введите число A    ");// дописать
+int A = Convert.ToInt32(Console.ReadLine());//далее пишем цикл 
+int sum = A%10;
+while(A>0)
 {
-    Console.WriteLine($"НЕ возмо обра число");
+    A=A/10;
+    sum +=A%10; //почему нельзя sum +=A/10%10;??
+}     
+Console.WriteLine($"Сумма цифр в чиселе А = {sum}");
 
-}
-else
-{
-    for(inti=1; i<=A; i++)
-}
 
-// адача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
-// [1,0,1,1,0,1,0,0]
-int
-int[]arr = new int[8]//8 число эл в массиве
-new Random().Next()
-arr[0] =5;
-int n = array.Length;
-Console.WriteLine(arr.Length);
-//jkолег
-int
-int[]arr = new int[8]//олег 
-new Random().Next()
-arr[0] =5;
-for ()
-{
-    int n = array.Length;{
-    int A = new Random()
-    Console.WriteLine(array[i])
 
-Console.WriteLine(arr.Length);
+
+// ceminar 4 задача 24 нипис прогр. которая принимает на вход число А 
+// а выдает сумму чисел от 1 до А. 7-> 28. 4-> 10
+// Console.WriteLine("Введите число A");// работает
+// int A = Convert.ToInt32(Console.ReadLine());//далее пишем цикл 
+// int sum = 0;
+// for (int i = 1; i <= A; i++) 
+// { 
+//     sum = sum + i; // sum += i
+// }
+// Console.WriteLine($"Сумма чисел от 1 до А = {sum}");
+// //_________________________________________________________________
+
+
+// cem 4. Задача 28: Напишите программу, которая принимает на вход число N и выдаёт 
+// // произведение чисел от 1 до N  4 -> 24;  5 -> 120
+// Console.WriteLine("Введите число A");// OK!!!!
+// int A = Convert.ToInt32(Console.ReadLine());//далее пишем цикл 
+// int sum = 1;
+// if (A<1)
+// {
+//     Console.WriteLine("Невозможно обработать число");
+// }
+// else{
+//     for (int i = 1; i <= A; i++) 
+//     {
+//      sum *= i;
+//     }
+// Console.WriteLine($"Произведение чисел от 1 до А = {sum}");
+// }
+
+
+
